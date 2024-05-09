@@ -55,6 +55,7 @@ headless = true
 - Andrea Weibel (Geneva)
 - **[Kate Whitaker](https://www.astrowhit.com)** (UMass-Amherst)
 - [Christina Williams](https://mips.as.arizona.edu/~cwilliams) (NOIRLab)
+- Yunchong Zhang (Pitt)
 - [Adi Zitrin](https://sites.physics.bgu.ac.il/zitrin/) (Ben Gurion)
 
 
