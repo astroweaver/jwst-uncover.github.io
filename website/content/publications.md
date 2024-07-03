@@ -87,14 +87,22 @@ headless = true
         2024, ApJ 963 74
 
 
-1. [JWST UNCOVER: The Overabundance of Ultraviolet-luminous Galaxies at z>9](https://ui.adsabs.harvard.edu/abs/2023arXiv231205030C/abstract)
-    - Chemerynska, I., Atek, H., Furtak, L. J., et al., 
-        2023, arXiv:2312.05030
-
 1. [UNCOVER NIRSpec/PRISM Spectroscopy Unveils Evidence of Early Core Formation in a Massive, Centrally Dusty Quiescent Galaxy at z<sub>spec</sub>=3.97](https://ui.adsabs.harvard.edu/abs/2024arXiv240205664S/abstract)
     - Setton, D. J., Khullar, G., Miller, T. B., et al., 
         2024, arXiv:2402.05664
     
+
 1. [Medium Bands, Mega Science: a JWST/NIRCam Medium-Band Imaging Survey of Abell 2744](https://ui.adsabs.harvard.edu/abs/2024arXiv240413132S/abstract)
     - Suess, K. A., Weaver, J. R., Price, S. H., et al., 
         2024, arXiv:2404.13132
+
+
+1. [JWST UNCOVER: The Overabundance of Ultraviolet-luminous Galaxies at z>9](https://ui.adsabs.harvard.edu/abs/2024MNRAS.531.2615C/abstract)
+    - Chemerynska, I., Atek, H., Furtak, L. J., et al., 
+        2024, MNRAS 531 2615
+
+
+1. [Two Distinct Classes of Quiescent Galaxies at Cosmic Noon Revealed by JWST PRIMER and UNCOVER](https://ui.adsabs.harvard.edu/abs/2024ApJ...967L..23C/abstract)
+    - Cutler, S. E., Whitaker, K. E., Weaver, J. R., et al., 
+        2024, ApJL 967 L23
+    
