@@ -15,7 +15,7 @@ cluster footprint, including both MegaScience and UNCOVER as
 well as a number of other programs. 
 
 
-See the [Data Release 3 page](/DR3.html) and the catalog paper ([Suess et al. 2024](URL)) for full details!
+See the [Data Release 3 page](/DR3.html) and the catalog paper ([Suess et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240413132S/abstract)) for full details!
 
 
 
