@@ -143,6 +143,10 @@ body {
     text-size-adjust: 100%; 
 }
 
+code {
+    font-family:'Source Code Pro'; 
+    font-weight: 300; 
+}
 
 a {
     -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out, border-bottom-style 0.2s ease-in-out;
