@@ -36,7 +36,7 @@ headless = true
     -  Wang, B., Fujimoto, S. , Labbe, I., et al., 
         2023, ApJL 957 L34
 
-1. [A supermassive black hole in the early universe growing in the shadows](https://ui.adsabs.harvard.edu/abs/2023arXiv230805735F/abstract)
+1. [A high black-hole-to-host mass ratio in a lensed AGN in the early Universe](https://ui.adsabs.harvard.edu/abs/2024Natur.628...57F/abstract)
     -  Furtak, L. J., Labbe, I., Zitrin, A., et al., 
         2024, Nature 628 57
 
@@ -107,6 +107,11 @@ headless = true
         2024, ApJL 967 L23
     
 
-<!-- 1. [The UNCOVER Survey: Initial Release of Ultradeep JWST/NIRSpec PRISM spectra for ~700 galaxies from z~0.3-13 in the Abell 2744 Lensing Field]()
-    - Price, S. H., XXXX, XXXX, et al., 
+1. [The Extreme Low-mass End of the Mass-Metallicity Relation at z∼7](https://ui.adsabs.harvard.edu/abs/2024arXiv240717110C/abstract)
+    -  Chemerynska, I., Atek, H., Dayal, P., et al., 
+        2024, arXiv:2407.17110
+    
+
+<!-- 1. [The UNCOVER Survey: Initial Release of Ultradeep JWST/NIRSpec PRISM spectra for ~700 galaxies from z~0.3-13 in Abell 2744]()
+    - Price, S. H., Bezanson, R., Labbe, I., et al., 
         2024, arXiv: -->
