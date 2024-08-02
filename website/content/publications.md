@@ -6,7 +6,7 @@ headless = true
 
 1. [The *JWST* UNCOVER Treasury survey: Ultradeep NIRSpec and NIRCam ObserVations before the Epoch of Reionization](https://ui.adsabs.harvard.edu/abs/2022arXiv221204026B/abstract)
     - Bezanson, R., Labbe, I., Whitaker, K. E., et al.,
-        2022, arXiv:2212.04026
+        2024, arXiv:2212.04026
 
 1. [UNCOVERing the extended strong lensing structures of Abell 2744 with the deepest JWST imaging](http://ui.adsabs.harvard.edu/abs/2023MNRAS.523.4568F)
     - Furtak, L. J., Zitrin, A., Weaver, J. R., et al.,

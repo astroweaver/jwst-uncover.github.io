@@ -7,7 +7,7 @@ imagecredit = "<a href=''>Price et al. 2024</a>"
 +++
 
 The initial UNCOVER spectroscopic release is now available, as presented in 
-[Price et al. 2024]()!
+[Price et al. 2024](URL)!
 
 This release includes spectra of 553 objects from z~0.3 to z~13 
 taken in July/Aug 2023 and a spectroscopic redshift catalog. 

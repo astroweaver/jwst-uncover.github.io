@@ -50,7 +50,7 @@ DR2
 <!-- Mosaic release -->
 <h4 class="minor bigger">
     <a href="DR2.html#Mosaics">Updated NIRCam primary / NIRISS parallel mosaic release</a>
-    <div class="smaller">(<a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221204026B/abstract">Bezanson et al. 2022</a>, July 13, 2023)</div>
+    <div class="smaller">(<a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221204026B/abstract">Bezanson et al. 2024</a>, July 13, 2023)</div>
 </h4>
 
 <!-- Lensing map release -->
@@ -90,7 +90,7 @@ DR1
 <!-- Mosaic release -->
 <h4 class="minor bigger">
     <a href="DR1.html#Mosaics">NIRCam primary / NIRISS parallel mosaic release</a>
-    <div class="smaller">(<a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221204026B/abstract">Bezanson et al. 2022</a>, December 7, 2022)</div>
+    <div class="smaller">(<a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221204026B/abstract">Bezanson et al. 2024</a>, December 7, 2022)</div>
 </h4>
 
 <!-- Lensing map release -->
