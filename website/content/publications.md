@@ -36,7 +36,7 @@ headless = true
     -  Wang, B., Fujimoto, S. , Labbe, I., et al., 
         2023, ApJL 957 L34
 
-1. [A supermassive black hole in the early universe growing in the shadows](https://ui.adsabs.harvard.edu/abs/2023arXiv230805735F/abstract)
+1. [A high black-hole-to-host mass ratio in a lensed AGN in the early Universe](https://ui.adsabs.harvard.edu/abs/2024Natur.628...57F/abstract)
     -  Furtak, L. J., Labbe, I., Zitrin, A., et al., 
         2024, Nature 628 57
 
@@ -105,4 +105,9 @@ headless = true
 1. [Two Distinct Classes of Quiescent Galaxies at Cosmic Noon Revealed by JWST PRIMER and UNCOVER](https://ui.adsabs.harvard.edu/abs/2024ApJ...967L..23C/abstract)
     - Cutler, S. E., Whitaker, K. E., Weaver, J. R., et al., 
         2024, ApJL 967 L23
+    
+
+1. [The Extreme Low-mass End of the Mass-Metallicity Relation at z∼7](https://ui.adsabs.harvard.edu/abs/2024arXiv240717110C/abstract)
+    -  Chemerynska, I., Atek, H., Dayal, P., et al., 
+        2024, arXiv:2407.17110
     
