@@ -12,13 +12,26 @@ DR4
 <h3 id="DR4" class="minor margtop"><a href="DR4.html">Data Release 4</a>
 </h3>
 
-
-<!-- Mosaic release -->
+<!-- Spectra release -->
 <h4 class="minor bigger">
-    <a href="DR4.html#Spectra">Initial Spectra and Redshift catalog release</a>;<br>
-    <a href="DR4.html#LensingMaps">Updated v2.0 Abell 2744 Lens Model release</a>;<br>
-    <a href="DR4.html#PhotometricCatalogs">Updated photometric catalogs with new lensing magnifications</a>
+    <a href="DR4.html#Spectra">First Spectra and Redshift catalog release</a>;<br>
+    <!-- <a href="DR4.html#LensingMaps">Updated v2.0 Abell 2744 Lens Model release</a>;<br> -->
+    <!-- <a href="DR4.html#PhotometricCatalogs">Updated photometric catalogs with new lensing magnifications</a> -->
+    <!-- <a href="DR4.html#PhotometricCatalogs">Compilation Updated photometric catalogs with new lensing magnifications</a> -->
     <div class="smaller">(<a href="URL">Price et al. 2024</a>, August 6, 2024)</div>
+</h4>
+
+
+<!-- Lensing map release -->
+<h4 class="minor bigger">
+    <a href="DR4.html#LensingMaps">Updated v2.0 Abell 2744 Lens Model release</a>;<br>
+    <div class="smaller">(<a href="URL">Price et al. 2024</a> & <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.4568F/abstract">Furtak et al. 2023</a>, August 6, 2024)</div>
+</h4>
+
+<!-- Photometry catalog release -->
+<h4 class="minor bigger">
+    <a href="DR4.html#PhotometricCatalogs">Updated MegaScience+UNCOVER photometric catalogs with new lensing magnifications</a>
+    <div class="smaller">(<a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240413132S/abstract">Suess et al. 2024</a> & <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..270....7W/abstract">Weaver et al. 2024</a>, August 6, 2024)</div>
 </h4>
 
 
