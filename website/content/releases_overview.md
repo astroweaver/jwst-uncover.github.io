@@ -15,9 +15,6 @@ DR4
 <!-- Spectra release -->
 <h4 class="minor bigger">
     <a href="DR4.html#Spectra">First Spectra and Redshift catalog release</a>;<br>
-    <!-- <a href="DR4.html#LensingMaps">Updated v2.0 Abell 2744 Lens Model release</a>;<br> -->
-    <!-- <a href="DR4.html#PhotometricCatalogs">Updated photometric catalogs with new lensing magnifications</a> -->
-    <!-- <a href="DR4.html#PhotometricCatalogs">Compilation Updated photometric catalogs with new lensing magnifications</a> -->
     <div class="smaller">(<a href="URL_P24">Price et al. 2024</a>, August 7, 2024)</div>
 </h4>
 
