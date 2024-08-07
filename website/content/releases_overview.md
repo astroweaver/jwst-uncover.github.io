@@ -6,6 +6,48 @@ headless = true
 
 
 <!-- 
+DR4
+-->
+
+<h3 id="DR4" class="minor margtop"><a href="DR4.html">Data Release 4</a>
+</h3>
+
+<!-- Spectra release -->
+<h4 class="minor bigger">
+    <a href="DR4.html#Spectra">First Spectra and Redshift catalog release</a>;<br>
+    <!-- <a href="DR4.html#LensingMaps">Updated v2.0 Abell 2744 Lens Model release</a>;<br> -->
+    <!-- <a href="DR4.html#PhotometricCatalogs">Updated photometric catalogs with new lensing magnifications</a> -->
+    <!-- <a href="DR4.html#PhotometricCatalogs">Compilation Updated photometric catalogs with new lensing magnifications</a> -->
+    <div class="smaller">(<a href="URL_P24">Price et al. 2024</a>, August 7, 2024)</div>
+</h4>
+
+
+<!-- Lensing map release -->
+<h4 class="minor bigger">
+    <a href="DR4.html#LensingMaps">Updated v2.0 Abell 2744 Lens Model release</a>
+    <div class="smaller">(<a href="URL_P24">Price et al. 2024</a> 
+    & <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.4568F/abstract">Furtak et al. 2023</a>, August 7, 2024)</div>
+</h4>
+
+<!-- Updated magnifications -->
+<h4 class="minor bigger">
+    <a href="DR4.html#UpdatedLensMag">Updated lensing magnifications</a>
+    <div class="smaller">(<a href="URL_P24">Price et al. 2024</a>, 
+    <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.4568F/abstract">Furtak et al. 2023</a>, 
+    <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240413132S/abstract">Suess et al. 2024</a>,
+    & <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..270....7W/abstract">Weaver et al. 2024</a>, 
+    August 7, 2024)</div>
+</h4>
+
+<!-- Photometry catalog release -->
+<!-- <h4 class="minor bigger">
+    <a href="DR4.html#PhotometricCatalogs">Updated MegaScience+UNCOVER photometric catalogs with new lensing magnifications</a>
+    <div class="smaller">(<a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240413132S/abstract">Suess et al. 2024</a> & <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..270....7W/abstract">Weaver et al. 2024</a>, August 7, 2024)</div>
+</h4> -->
+
+
+
+<!-- 
 DR3
 -->
 
@@ -32,7 +74,7 @@ DR2
 <!-- Mosaic release -->
 <h4 class="minor bigger">
     <a href="DR2.html#Mosaics">Updated NIRCam primary / NIRISS parallel mosaic release</a>
-    <div class="smaller">(<a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221204026B/abstract">Bezanson et al. 2022</a>, July 13, 2023)</div>
+    <div class="smaller">(<a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221204026B/abstract">Bezanson et al. 2024</a>, July 13, 2023)</div>
 </h4>
 
 <!-- Lensing map release -->
@@ -72,7 +114,7 @@ DR1
 <!-- Mosaic release -->
 <h4 class="minor bigger">
     <a href="DR1.html#Mosaics">NIRCam primary / NIRISS parallel mosaic release</a>
-    <div class="smaller">(<a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221204026B/abstract">Bezanson et al. 2022</a>, December 7, 2022)</div>
+    <div class="smaller">(<a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221204026B/abstract">Bezanson et al. 2024</a>, December 7, 2022)</div>
 </h4>
 
 <!-- Lensing map release -->

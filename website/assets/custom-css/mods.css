@@ -514,6 +514,11 @@ table th {
 }
 
 
+table tr.mainhead th{
+    background-color: rgba(229, 160, 90, 0.22);
+    /* background-color: rgba(255, 144, 34, 0.22);  */
+}
+
 /* table tbody tr:nth-child(2n + 1) {
     background-color: inherit; 
 } */

@@ -1,42 +1,313 @@
 +++
-title = "Data Release 3"
+title = "Data Release 4"
 draft = false
-type = "datarelease_megascience"
-URL = "/DR3.html"
+type = "datarelease_ms_uncover_color"
+URL = "/DR4.html"
 
 +++
-<!-- <h1>The UNCOVER & MegaScience Surveys: </h1> -->
-
 
 <h1 class="othersurvey">The <img src="../images/UNCOVER_logo_white.png" alt="MegaScience"/> & <img src="../images/megascience_white.png" alt="MegaScience"/> Surveys: </h1>
-<h2 id="DR3">Data Release 3</h2>
 
 
-<p style="margin-bottom: 0.5rem; ">
-    <b style="color: rgba(171, 113, 218,1);">NOTICE: <a href="/DR4.html">DR4</a> 
-        data products are now available! 
-        Check <a href="/DR4.html">DR4</a>, as DR3 data products 
-        will be superceded by the new data release (coming soon!).</b>
-</p>
 
-<hr>
-
+<h2 id="DR4">Data Release 4</h2>
 
 <div class="subnav">
     <ul class="subnav">
-        <li><a href="#PhotometricCatalogs">Photometric catalogs</a></li>
-        <li><a href="#Mosaics">Mosaics</a></li>
+        <li><a href="#Spectra">Reduced spectra + catalogs</a></li>
+        <li><a href="#LensingMaps">Lensing maps</a></li>
+        <li><a href="#UpdatedLensMag">Updated Lensing Magnifications</a></li>
+        <!-- <li><a href="#SPSCatalogs">Stellar population catalogs</a></li> -->
+        <!-- <li><a href="#PhotometricCatalogs">Photometric catalogs</a></li> -->
+        <!-- <li><a href="#Mosaics">Mosaics</a></li> -->
     </ul>
 </div>
 
 
-<hr style="margin-top: 0rem">
-<!-- Photometric catalogs release -->
-<h3 class="minor" id="PhotometricCatalogs">Photometric catalog release</h3>
-<h4 class="minor date">April 22, 2024</h4>
+
+<hr>
+<!-- Spectra+Catalogs-->
+<h3 class="minor" id="Spectra">First reduced spectra + redshift catalog release</h3>
+<h4 class="minor date">August 7, 2024</h4>
 
 <p style="margin-bottom: 1rem">
-    The DR3 Photometric catalog includes photometry from 
+    The initial release of the UNCOVER reduced spectra and redshift catalogs 
+    are now available as part of DR4! 
+    The DR4 Spectra release includes all successfully reduced observations 
+    taken in July/Aug 2023, with PRISM spectra from 0.6-5µm of 553 objects.  
+    For this initial release, the redshift catalog includes only 
+    objects with secure or solid (<code>flag_zspec_qual=3</code> or 
+    <code>=2</code>) redshift fits (409 objects). 
+</p>
+
+<p style="margin-bottom: 1rem">
+    All catalogs are based on F444W PSF-matched imaging, 
+    where the bright cluster galaxies and ICL have been modeled and subtracted. 
+    Detection was performed on a noise-equalized long-wavelength image 
+    (F277W+F356W+F444W). 
+    <!--  -->
+</p>
+<p style="margin-bottom: 1rem">
+    In addition to the spectroscopic redshift catalog, 
+    we release a catalog of line fluxes that are estimated from 
+    each object's <a href="https://github.com/gbrammer/msaexp"><code>msaexp</code></a> 
+    redshift best-fit, and 
+    magnifications calculated from the updated <a href="#LensingMaps">v2.0</a> lensing 
+    model using the new spec-zs. 
+</p>
+<p style="margin-bottom: 1rem">
+    For full details, please see the 
+    <a href="https://drive.google.com/file/d/1qkGHaxyYO0vtdPNYus-eI6_Dhn9uYC3Y/view?usp=drive_link">README</a> 
+    and the <a href="URL_P24">UNCOVER first spectra release paper</a>.
+</p>
+<p style="margin-bottom: 1.5rem">
+    Please cite <a href="URL_P24">Price et al. 2024</a>
+    when using any of the following data products, 
+    and <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.4568F/abstract">Furtak et al. 2023</a>  
+    when using the MSA target magnification catalog. 
+</p>
+<table style="margin-bottom:0; width:100%;">
+    <tr class='mainhead'>
+        <th style="width:25%">Catalog</th>
+        <th style="width:50%">Description</th>
+        <th style="width:25%">Files</th>
+    </tr>
+    <tr>
+        <td>Redshifts</td>
+        <td>
+            Spectroscopic redshift catalog of all 
+            targeted objects, with quality flags
+        </td>
+        <td>         
+            <!-- Catalog: -->
+            <a href="https://drive.google.com/file/d/14J8mB9IliNxD42m4XnGItCRFttGId5GP/view?usp=drive_link">FITS</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1tgY0jzJ1m0DbkEWIhwNK1zu6P9XtYY1b/view?usp=drive_link">ASCII</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1qkGHaxyYO0vtdPNYus-eI6_Dhn9uYC3Y/view?usp=drive_link">README</a>
+        </td>
+    </tr>
+    <tr>
+        <td>Line fluxes</td>
+        <td>
+            Line fluxes derived from <code>msaexp</code> redshift fits for 
+            all targeted objects
+        </td>
+        <td>         
+            <!-- Catalog: -->
+            <a href="https://drive.google.com/file/d/1I97uhypYO4e4kUOVq0UENz-PHeoTKg8w/view?usp=drive_link">FITS</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1zvs6giDWviuOA0sRQMObc7IerbmdLF_P/view?usp=drive_link">ASCII</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1qkGHaxyYO0vtdPNYus-eI6_Dhn9uYC3Y/view?usp=drive_link">README</a>
+        </td>
+    </tr>    
+    <tr style="border-bottom: 0;">
+        <td>MSA target magnifications</td>
+        <td>
+            <a href="#LensingMaps">v2.0</a> lensing magnifications for all MSA targets 
+        </td>
+        <td>         
+            <!-- Catalog: -->
+            <a href="https://drive.google.com/file/d/1o7BBgi4WEIbwgc2FO4QVMGfVv-XplLKI/view?usp=drive_link">FITS</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1mq4RDH5qewnEvLegZNnyKR5T8tT5GYb1/view?usp=drive_link">ASCII</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1qkGHaxyYO0vtdPNYus-eI6_Dhn9uYC3Y/view?usp=drive_link">README</a>
+        </td>
+    </tr>
+</table>
+
+<table style="margin-bottom:0; width:100%;">
+    <tr class='mainhead'>
+        <th style="width:25%">Reduced spectra</th>
+        <th style="width:50%">Description</th>
+        <th style="width:25%">Files</th>
+    </tr>
+    <tr>
+        <td><b>Default (recommended)</b></td>
+        <td>Extracted 1D+2D spectra, & other extensions</td>
+        <td>         
+            <a href="https://drive.google.com/drive/folders/1OiGBRv7Vi9CXMyx_QqGexVvu6NEY1l5D?usp=drive_link">Folder</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1qkGHaxyYO0vtdPNYus-eI6_Dhn9uYC3Y/view?usp=drive_link">README</a>
+        </td>
+    </tr>
+    <tr style="border-bottom: 0;">
+        <td>Phot cal</td>
+        <td>Spectra calibrated to 0.32" diameter aperture 
+            photometry using polynomial fit; 
+            see README for recommended use cases
+        </td>
+        <td>         
+            <a href="https://drive.google.com/drive/folders/1SpnDhzhxIZY3UB-UFsqeL16L-X8sxABp?usp=drive_link">Folder</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1qkGHaxyYO0vtdPNYus-eI6_Dhn9uYC3Y/view?usp=drive_link">README</a>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr class='mainhead'>
+        <th style="width:25%">Ancillary products</th>
+        <th style="width:50%">Description</th>
+        <th style="width:25%">Files</th>        
+    </tr>
+    <tr>
+        <td>Redshift fits</td>
+        <td><code>msaexp</code> redshift fitting files for best-fit</td>
+        <td>        
+            <a href="https://drive.google.com/drive/folders/1imJobDIPA4eEjy_87eDBFHr1IoMVC6fR?usp=drive_link">Folder</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1qkGHaxyYO0vtdPNYus-eI6_Dhn9uYC3Y/view?usp=drive_link">README</a> 
+        </td>
+    </tr>    
+    <tr>
+        <td>Mask metadata</td>
+        <td>Details regarding observed masks and targets</td>
+        <td>        
+            <a href="https://drive.google.com/drive/folders/15MVdWMh-8OHNcXAY3Nnii2n_d5EINb4I?usp=drive_link">Folder</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1qkGHaxyYO0vtdPNYus-eI6_Dhn9uYC3Y/view?usp=drive_link">README</a> 
+        </td>
+    </tr>
+</table>
+
+
+
+
+<hr>
+<!-- Lensing map release -->
+<h3 class="minor" id="LensingMaps">Lens model updated release: v2.0</h3>
+<h4 class="date">August 7, 2024</h4>
+<h5>Authors: Lukas J. Furtak and Adi Zitrin</h5>
+
+<p style="margin-bottom: 1rem">
+    The UNCOVER strong lensing (SL) model 
+    is a parametric SL model constructed 
+    with the UNCOVER JWST data using a new (grid-free) analytic method by A. Zitrin.
+</p>
+
+<p style="margin-bottom: 1rem">
+    In this model release (v2.0), we supply WCS-registered FITS maps 
+    of the deflection field (in pixels), convergence, shear, 
+    and the lensing potential normalized to Dds/Ds=1. 
+    We also supply magnification maps for various source redshifts: 
+    1, 2, 4, 6, 8, 10, 15 and 20. The lensing maps have a FoV of 7.6' x 7.6', 
+    which covers the entire central UNCOVER field. 
+    We provide maps for the best-fit model in two resolutions, 
+    a high-resolution version in 0.04"/pix (JWST NIRCam resolution) 
+    and a low-resolution version with 0.1"/pix.
+</p>
+<p style="margin-bottom: 1rem">
+    Compared to the <a href="/DR1.html#LensingMaps">v1.1 models</a>, 
+    we added 13 spectroscopic redshifts from JWST/NIRSpec MSA and JWST/NIRCam 
+    grism observations, and 132 additional cluster members selected from 
+    JWST/NIRCam imaging. The additional spectroscopic redshifts in particular 
+    constrain the northern and north-western sub-structures that were 
+    previously mostly constrained with photometric redshifts.
+</p>
+
+
+<p style="margin-bottom: 1rem">
+    Please cite 
+    <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.4568F/abstract">Furtak et al. 2023</a> 
+    and <a href="URL_P24">Price et al. 2024</a>
+    when using any of the lensing maps provided here.
+</p>
+
+<p style="margin-bottom: 1.5rem">
+    For any questions, please contact us at: <i>furtak [at] post.bgu.ac.il</i>
+</p>
+
+<table>
+    <tr class='mainhead'>
+        <th>UNCOVER lensing maps</th>
+        <th>Files</th>
+    </tr>
+    <tr>
+        <td>v2.0</td>
+        <td>
+            <a href="https://drive.google.com/drive/folders/1Y3CGDH9EfqrjCHZSwwx4SLFDvCV8pqlV?usp=drive_link">Folder</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/10IGwetPxd06EFDTIzYXJIy8yip6iLdYa/view?usp=drive_link">README</a>
+        </td>
+    </tr>
+    <tr>
+        <td>All versions</td>
+        <td>
+            <a href="https://drive.google.com/drive/folders/1Lc7uveJr_ZNIcvAQYVfAeRF8Qr68D_5p?usp=drive_link">Top folder</a> 
+        </td>
+    </tr>
+</table>
+
+
+
+<hr>
+<!-- Updated lensing magnifications for full UNCOVER catalog -->
+<h3 class="minor" id="UpdatedLensMag">Updated Lensing Magnifications</h3>
+<h4 class="minor date">August 7, 2024</h4>
+
+
+
+<p style="margin-bottom: 1rem">
+    We also release updated lensing magnifications the full UNCOVER photometric sample!  
+    The lensing values are computed for each source 
+    (from the <a href="DR3.html/#PhotometricCatalogs">SUPER photometric catalog</a>) 
+    using the best-available redshift 
+    (highest to lowest priority: UNCOVER MSA spec-z, literature spec-z, 
+    and MegaScience+UNCOVER <code>eazy</code> phot-z). 
+</p>
+<p style="margin-bottom: 1rem">
+    <b>Note that the IDs in this full-sample catalog are identical to the DR3 IDs.</b>
+</p>
+<p style="margin-bottom: 1rem">
+    For full details, please see the 
+    <a href="https://drive.google.com/file/d/1o6uidRd0G4lkrO6WrxPK7hkvp-ZbBnjI/view?usp=drive_link">README</a>. 
+</p>
+<p style="margin-bottom: 1.5rem">
+    Please cite 
+    <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.4568F/abstract">Furtak et al. 2023</a> (lens modeling), 
+    <a href="URL_P24">Price et al. 2024</a> (updated lens model & UNCOVER spec-zs), and 
+    <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240413132S/abstract">Suess et al. 2024</a> 
+    & <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..270....7W/abstract">Weaver et al. 2024</a> 
+    (MegaScience+UNCOVER <code>eazy</code> phot-zs)
+    when using the full-sample magnification catalog.
+</p>
+<table style="margin-bottom:0; width:100%;">
+    <tr class='mainhead'>
+        <th style="width:25%">Catalog</th>
+        <th style="width:50%">Description</th>
+        <th style="width:25%" >Files</th>        
+    </tr>
+    <tr>
+        <td>SUPER magnifications</td>
+        <td>
+            <a href="#LensingMaps">v2.0</a> lensing magnifications for 
+            all objects in the<br><a href="DR3.html#PhotometricCatalogs">DR3 MegaScience+UNCOVER SUPER catalog</a> 
+            <br>(row matched, using the same IDs)
+        </td>
+        <td>         
+            <a href="https://drive.google.com/file/d/1o7nnk6c1Gu3-x5vkQoolk8S6y22vVIiE/view?usp=drive_link">FITS</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1o7JqX2RYb-Dx1ewxNigfgoOn-u5moyq2/view?usp=drive_link">ASCII</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1o6uidRd0G4lkrO6WrxPK7hkvp-ZbBnjI/view?usp=drive_link">README</a>
+        </td>
+    </tr>
+    <tr>
+        <td>MSA target magnifications</td>
+        <td>
+            <a href="#LensingMaps">v2.0</a> lensing magnifications for all MSA targets (by <code>id_msa</code>); 
+            see the <a href="#Spectra">spectroscopic release</a> description. 
+        </td>
+        <td>         
+            <!-- Catalog: -->
+            <a href="https://drive.google.com/file/d/1o7BBgi4WEIbwgc2FO4QVMGfVv-XplLKI/view?usp=drive_link">FITS</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1mq4RDH5qewnEvLegZNnyKR5T8tT5GYb1/view?usp=drive_link">ASCII</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1qkGHaxyYO0vtdPNYus-eI6_Dhn9uYC3Y/view?usp=drive_link">README</a>
+        </td>
+    </tr>
+</table> 
+
+
+<!-- <hr> -->
+<!-- Photometric catalogs release -->
+<!-- <h3 class="minor" id="PhotometricCatalogs">Photometric catalog release</h3>
+<h4 class="minor date">August 7, 2024</h4>
+
+<p style="margin-bottom: 1rem">
+    This release includes updated DR4 photometric catalogs, 
+    [FINAL DETAILS]. 
+</p>
+<p style="margin-bottom: 1rem">
+    The DR4 Photometric catalog includes photometry from 
     the combined MegaScience+UNCOVER set of mosaics. 
     Included in the release are a "SUPER" catalog with photometry determined 
     from optimally-selected color apertures, identification of 
@@ -48,15 +319,18 @@ URL = "/DR3.html"
     where the bright cluster galaxies and ICL have been modeled and subtracted. 
     Detection was performed on a noise-equalized long-wavelength image 
     (F277W+F356W+F444W). 
-    <!--  -->
 </p>
 <p style="margin-bottom: 1rem">
     In addition to photometry, the catalogs contain basic photometric
     redshifts and rest-frame fluxes derived using EAZY, 
     ALMA fluxes from DUALZ (<a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230907834F/abstract">Fujimoto et al. 2023</a>) 
     where available, and lensing magnifications for each object based on the  
-    <a href=/DR2.html#LensingMaps>v1.1 lensing maps</a>  
-    (<a href="https://ui.adsabs.harvard.edu/abs/2022arXiv221204381F/abstract">Furtak et al. 2022</a>). 
+    <a href=#LensingMaps>v2.0 lensing maps</a>  
+    (<a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.4568F/abstract">Furtak et al. 2023</a>, 
+    <a href="URL_P24">Price et al. 2024</a>). 
+    <b>Note UNCOVER MSA spec-zs are not included in these catalogs,
+    and the lensing magnifications in this catalog are based only 
+    on phot-zs or previous literature spec-zs.</b> 
 </p>
 <p style="margin-bottom: 1rem">
     Also included in the release is a catalog of photometric redshifts derived using 
@@ -65,14 +339,14 @@ URL = "/DR3.html"
 </p>
 <p style="margin-bottom: 1rem">
     For full details, please see the 
-    <a href="https://drive.google.com/file/d/19lrLufcHyX_-vYHgewT91Otdt-LbahgQ/view?usp=sharing">README</a> 
+    <a href="URL">README</a> 
     and the <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..270....7W/abstract">UNCOVER catalog paper</a>.
 </p>
 <p style="margin-bottom: 1.5rem">
-    Please cite <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240413132S/abstract">Suess et al. 2024</a>
+    Please cite <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240413132S/abstract">Suess et al. 2024</a> 
+    and <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..270....7W/abstract">Weaver et al. 2024</a> 
     when using any of the following data products.
 </p>
-<!-- <table> -->
 <table style="margin-bottom:0; width:100%;">
     <tr class='mainhead'>
         <th colspan="2">Photometric catalogs (including EAZY redshifts & restframe fluxes):</th>
@@ -87,9 +361,9 @@ URL = "/DR3.html"
         <td>SUPER</td>
         <td>Recommended catalog with optimally determined aperture sizes per object</td>
         <td>         
-            <a href="https://drive.google.com/file/d/1EUU3QWYnzaIwRAFXg961mUmoR_X1Frdd/view?usp=sharing">Catalog</a> &nbsp; &nbsp; 
-            <a href="https://drive.google.com/file/d/19lrLufcHyX_-vYHgewT91Otdt-LbahgQ/view?usp=sharing">README</a>&nbsp; &nbsp; 
-            <a href="https://drive.google.com/file/d/1GskJmvHvtpjINTk3Mg0P6DKa9UhMJ_oK/view?usp=sharing">Regions</a>
+            <a href="URL">Catalog</a> &nbsp; &nbsp; 
+            <a href="URL">README</a>&nbsp; &nbsp; 
+            <a href="URL">Regions</a>
         </td>
     </tr>
     <tr style="border-bottom: 0;">
@@ -98,8 +372,8 @@ URL = "/DR3.html"
             (e.g., small radius for compact, faint, high-z, or crowded sources; ...)
         </td>
         <td>
-            <a href="https://drive.google.com/drive/folders/1QpbRyn4SAmNMXFWQaST3SbK7IPJFqX4d?usp=sharing">Catalogs</a> &nbsp; &nbsp; 
-            <a href="https://drive.google.com/file/d/19lrLufcHyX_-vYHgewT91Otdt-LbahgQ/view?usp=sharing">README</a> 
+            <a href="URL">Catalogs</a> &nbsp; &nbsp; 
+            <a href="URL">README</a> 
         </td>
     </tr>
 </table>
@@ -109,12 +383,13 @@ URL = "/DR3.html"
         <th style="width:30%"></th>
     </tr>
     <tr style="border-bottom: 0;">
-        <td style="width:70%">Prospector-β photometric redshift catalog, derived using the DR3 
-            SUPER photometry catalog. 
+        <td style="width:70%">Prospector-β photometric redshift catalog, 
+            derived using the DR4 SUPER photometry catalog (and updated 
+            magnifications).
         </td>
         <td style="width:30%">        
-            <a href="https://drive.google.com/file/d/1AjhxIuysQa2LhZxo0rHyxs2IuKURqRV9/view?usp=sharing">Catalog</a> &nbsp; &nbsp; 
-            <a href="https://drive.google.com/file/d/11JxL1bULFTivdNV9EaHvyjn0E7xt5KxX/view?usp=sharing">README</a>
+            <span style="color: rgba(229, 160, 90, 1);">Catalog [coming soon!]</span> &nbsp; &nbsp; 
+            <span style="color: rgba(229, 160, 90, 1);">README [coming soon!]</span>
         </td>
     </tr>
 </table>
@@ -128,9 +403,9 @@ URL = "/DR3.html"
         <td>LW detection</td>
         <td>Noise-equalized F277W+F356W+F444W detection image</td>
         <td>        
-            <a href="https://drive.google.com/file/d/1dX3VHioJSRT_m9YS0v1t1-2EYgqHbP_L/view?usp=sharing">Image</a> &nbsp; &nbsp; 
-            <a href="https://drive.google.com/file/d/1Jz41vJSUONI4zDRGyexFHRjyJgshJotS/view?usp=sharing">Segmap</a> &nbsp; &nbsp; 
-            <a href="https://drive.google.com/file/d/1GskJmvHvtpjINTk3Mg0P6DKa9UhMJ_oK/view?usp=sharing">Regions</a> 
+            <a href="URL">Image</a> &nbsp; &nbsp; 
+            <a href="URL">Segmap</a> &nbsp; &nbsp; 
+            <a href="URL">Regions</a> 
         </td>
     </tr>
     <tr>
@@ -138,41 +413,49 @@ URL = "/DR3.html"
         <td>bCG-subtracted mosaics (non-PSF-matched) 
             and bCG models</td>      
         <td>        
-            <a href="https://drive.google.com/drive/folders/1XhCIOBYunXvzX6bFPAWDk8Jhmt98Hzro?usp=sharing">Images</a> &nbsp; &nbsp; 
-            <a href="https://drive.google.com/file/d/10v3xZA6S4DbQA2dFRikfgmTC2Xka0P44/view?usp=sharing">README</a> &nbsp; &nbsp; 
-            <a href="https://drive.google.com/drive/folders/1p3lCIZJNbKmNjnDzr5wk3Mu5j61OE5ii?usp=sharing">Models</a> 
+            <a href="URL">Images</a> &nbsp; &nbsp; 
+            <a href="URL">README</a> &nbsp; &nbsp; 
+            <a href="URL">Models</a> 
         </td>
     </tr>
     <tr>
         <td>PSFs</td>
         <td>Empirical PSFs for all filters</td>       
         <td>
-            <a href="https://drive.google.com/file/d/1HkmSehzEnlpa9qa_hDmW56t_VntNwxWt/view?usp=sharing">FITS files</a>
+            <a href="URL">FITS files</a>
         </td>
     </tr>
     <tr>
         <td>Kernels</td>  
         <td>Convolution kernels for PSF matching all filters to F444W</td>
         <td>
-            <a href="https://drive.google.com/file/d/1DRvDtnCwGglPaDLr_HLSmCk32_OBhFaX/view?usp=sharing">FITS files</a> 
+            <a href="URL">FITS files</a> 
         </td>
     </tr>
     <tr>
         <td>Filter translation</td>
         <td>EAZY zphot filter translation</td>
         <td>
-            <a href="https://drive.google.com/file/d/1kIie7Ysr_ZEs14_gZQkQbgs5UgTiPEi5/view?usp=sharing">zphot.translate</a>
+            <a href="URL">zphot.translate</a>
         </td>
     </tr>
-</table>
+</table> -->
 
 
 
 
-<hr>
+<!-- <hr> -->
+
 <!-- Mosaic release -->
-<h3 class="minor" id="Mosaics">NIRCam primary / NIRISS parallel mosaic release</h3>
+
+<!-- <h3 class="minor" id="Mosaics">NIRCam primary / NIRISS parallel mosaic release</h3>
 <h4 class="minor date">April 22, 2024</h4>
+
+
+<p style="margin-bottom: 1rem">
+    <b style="color: rgba(229, 160, 90, 1);">DR4 does not update the UNCOVER mosaics, 
+        but the links to the DR3 
+    images are included here for ease of use.</b>
 
 <p style="margin-bottom: 0.5rem">
     The reduced mosaics from the MegaScience observations are now available! 
@@ -188,7 +471,6 @@ URL = "/DR3.html"
 </p>
 
 <p style="margin-bottom: 0.5rem">
-
     Updated UNCOVER mosaics, with the same WCS, are also available. 
     The short- (shorter than F250M) 
     and long-wavelength bands (F250M and longer) 
@@ -261,8 +543,6 @@ These mosaics include data from the following programs:
     </table>
     </i>                    
 </p>
-
-
 
 
 <table>
@@ -647,4 +927,4 @@ These mosaics include data from the following programs:
         </td>
     </tr>
 </table>
-
+ -->
