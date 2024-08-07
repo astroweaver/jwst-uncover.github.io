@@ -16,9 +16,10 @@ URL = "/DR4.html"
     <ul class="subnav">
         <li><a href="#Spectra">Reduced spectra + catalogs</a></li>
         <li><a href="#LensingMaps">Lensing maps</a></li>
-        <li><a href="#PhotometricCatalogs">Photometric catalogs</a></li>
-        <li><a href="#Mosaics">Mosaics</a></li>
+        <li><a href="#UpdatedLensMag">Updated Lensing Magnifications</a></li>
         <!-- <li><a href="#SPSCatalogs">Stellar population catalogs</a></li> -->
+        <!-- <li><a href="#PhotometricCatalogs">Photometric catalogs</a></li> -->
+        <!-- <li><a href="#Mosaics">Mosaics</a></li> -->
     </ul>
 </div>
 
@@ -26,8 +27,8 @@ URL = "/DR4.html"
 
 <hr>
 <!-- Spectra+Catalogs-->
-<h3 class="minor" id="Spectra">Initial reduced spectra + redshift catalog release</h3>
-<h4 class="minor date">August 6, 2024</h4>
+<h3 class="minor" id="Spectra">First reduced spectra + redshift catalog release</h3>
+<h4 class="minor date">August 7, 2024</h4>
 
 <p style="margin-bottom: 1rem">
     The initial release of the UNCOVER reduced spectra and redshift catalogs 
@@ -50,20 +51,21 @@ URL = "/DR4.html"
     In addition to the spectroscopic redshift catalog, 
     we release a catalog of line fluxes that are estimated from 
     each object's <a href="https://github.com/gbrammer/msaexp"><code>msaexp</code></a> 
-    redshift best-fit. 
+    redshift best-fit, and 
+    magnifications calculated from the updated <a href="#LensingMaps">v2.0</a> lensing 
+    model using the new spec-zs. 
 </p>
 <p style="margin-bottom: 1rem">
     For full details, please see the 
     <a href="https://drive.google.com/file/d/1qkGHaxyYO0vtdPNYus-eI6_Dhn9uYC3Y/view?usp=drive_link">README</a> 
-    and the <a href="URL">UNCOVER first spectra release paper</a>.
+    and the <a href="URL_P24">UNCOVER first spectra release paper</a>.
 </p>
 <p style="margin-bottom: 1.5rem">
-    Please cite <a href="URL">Price et al. 2024</a>
+    Please cite <a href="URL_P24">Price et al. 2024</a>
     when using any of the following data products, 
     and <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.4568F/abstract">Furtak et al. 2023</a>  
     when using the MSA target magnification catalog. 
 </p>
-<!-- <table> -->
 <table style="margin-bottom:0; width:100%;">
     <tr class='mainhead'>
         <th style="width:25%">Catalog</th>
@@ -99,11 +101,11 @@ URL = "/DR4.html"
     <tr style="border-bottom: 0;">
         <td>MSA target magnifications</td>
         <td>
-            Lensing magnifications for all MSA targets (computed using the new 
-            <a href="#LensingMaps">v2.0 lensing model</a>)
+            <a href="#LensingMaps">v2.0</a> lensing magnifications for all MSA targets 
         </td>
         <td>         
             <!-- Catalog: -->
+            <a href="https://drive.google.com/file/d/1o7BBgi4WEIbwgc2FO4QVMGfVv-XplLKI/view?usp=drive_link">FITS</a> &nbsp; &nbsp; 
             <a href="https://drive.google.com/file/d/1mq4RDH5qewnEvLegZNnyKR5T8tT5GYb1/view?usp=drive_link">ASCII</a> &nbsp; &nbsp; 
             <a href="https://drive.google.com/file/d/1qkGHaxyYO0vtdPNYus-eI6_Dhn9uYC3Y/view?usp=drive_link">README</a>
         </td>
@@ -166,12 +168,11 @@ URL = "/DR4.html"
 <hr>
 <!-- Lensing map release -->
 <h3 class="minor" id="LensingMaps">Lens model updated release: v2.0</h3>
-<h4 class="date">July 29, 2024</h4>
+<h4 class="date">August 7, 2024</h4>
 <h5>Authors: Lukas J. Furtak and Adi Zitrin</h5>
 
 <p style="margin-bottom: 1rem">
     The UNCOVER strong lensing (SL) model 
-    <!-- (produced by Lukas J. Furtak and Adi Zitrin)  -->
     is a parametric SL model constructed 
     with the UNCOVER JWST data using a new (grid-free) analytic method by A. Zitrin.
 </p>
@@ -200,7 +201,7 @@ URL = "/DR4.html"
 <p style="margin-bottom: 1rem">
     Please cite 
     <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.4568F/abstract">Furtak et al. 2023</a> 
-    and <a href="URL">Price et al. 2024</a>
+    and <a href="URL_P24">Price et al. 2024</a>
     when using any of the lensing maps provided here.
 </p>
 
@@ -229,10 +230,77 @@ URL = "/DR4.html"
 </table>
 
 
+
 <hr>
+<!-- Updated lensing magnifications for full UNCOVER catalog -->
+<h3 class="minor" id="UpdatedLensMag">Updated Lensing Magnifications</h3>
+<h4 class="minor date">August 7, 2024</h4>
+
+
+
+<p style="margin-bottom: 1rem">
+    We also release updated lensing magnifications the full UNCOVER photometric sample!  
+    The lensing values are computed for each source 
+    (from the <a href="DR3.html/#PhotometricCatalogs">SUPER photometric catalog</a>) 
+    using the best-available redshift 
+    (highest to lowest priority: UNCOVER MSA spec-z, literature spec-z, 
+    and MegaScience+UNCOVER <code>eazy</code> phot-z). 
+</p>
+<p style="margin-bottom: 1rem">
+    <b>Note that the IDs in this full-sample catalog are identical to the DR3 IDs.</b>
+</p>
+<p style="margin-bottom: 1rem">
+    For full details, please see the 
+    <a href="https://drive.google.com/file/d/1o6uidRd0G4lkrO6WrxPK7hkvp-ZbBnjI/view?usp=drive_link">README</a>. 
+</p>
+<p style="margin-bottom: 1.5rem">
+    Please cite 
+    <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.4568F/abstract">Furtak et al. 2023</a> (lens modeling), 
+    <a href="URL_P24">Price et al. 2024</a> (updated lens model & UNCOVER spec-zs), and 
+    <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240413132S/abstract">Suess et al. 2024</a> 
+    & <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..270....7W/abstract">Weaver et al. 2024</a> 
+    (MegaScience+UNCOVER <code>eazy</code> phot-zs)
+    when using the full-sample magnification catalog.
+</p>
+<table style="margin-bottom:0; width:100%;">
+    <tr class='mainhead'>
+        <th style="width:25%">Catalog</th>
+        <th style="width:50%">Description</th>
+        <th style="width:25%" >Files</th>        
+    </tr>
+    <tr>
+        <td>SUPER magnifications</td>
+        <td>
+            <a href="#LensingMaps">v2.0</a> lensing magnifications for 
+            all objects in the<br><a href="DR3.html#PhotometricCatalogs">DR3 MegaScience+UNCOVER SUPER catalog</a> 
+            <br>(row matched, using the same IDs)
+        </td>
+        <td>         
+            <a href="https://drive.google.com/file/d/1o7nnk6c1Gu3-x5vkQoolk8S6y22vVIiE/view?usp=drive_link">FITS</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1o7JqX2RYb-Dx1ewxNigfgoOn-u5moyq2/view?usp=drive_link">ASCII</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1o6uidRd0G4lkrO6WrxPK7hkvp-ZbBnjI/view?usp=drive_link">README</a>
+        </td>
+    </tr>
+    <tr>
+        <td>MSA target magnifications</td>
+        <td>
+            <a href="#LensingMaps">v2.0</a> lensing magnifications for all MSA targets (by <code>id_msa</code>); 
+            see the <a href="#Spectra">spectroscopic release</a> description. 
+        </td>
+        <td>         
+            <!-- Catalog: -->
+            <a href="https://drive.google.com/file/d/1o7BBgi4WEIbwgc2FO4QVMGfVv-XplLKI/view?usp=drive_link">FITS</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1mq4RDH5qewnEvLegZNnyKR5T8tT5GYb1/view?usp=drive_link">ASCII</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1qkGHaxyYO0vtdPNYus-eI6_Dhn9uYC3Y/view?usp=drive_link">README</a>
+        </td>
+    </tr>
+</table> 
+
+
+<!-- <hr> -->
 <!-- Photometric catalogs release -->
-<h3 class="minor" id="PhotometricCatalogs">Photometric catalog release</h3>
-<h4 class="minor date">August 6, 2024</h4>
+<!-- <h3 class="minor" id="PhotometricCatalogs">Photometric catalog release</h3>
+<h4 class="minor date">August 7, 2024</h4>
 
 <p style="margin-bottom: 1rem">
     This release includes updated DR4 photometric catalogs, 
@@ -255,7 +323,6 @@ URL = "/DR4.html"
     where the bright cluster galaxies and ICL have been modeled and subtracted. 
     Detection was performed on a noise-equalized long-wavelength image 
     (F277W+F356W+F444W). 
-    <!--  -->
 </p>
 <p style="margin-bottom: 1rem">
     In addition to photometry, the catalogs contain basic photometric
@@ -264,7 +331,7 @@ URL = "/DR4.html"
     where available, and lensing magnifications for each object based on the  
     <a href=#LensingMaps>v2.0 lensing maps</a>  
     (<a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.4568F/abstract">Furtak et al. 2023</a>, 
-    <a href="URL">Price et al. 2024</a>). 
+    <a href="URL_P24">Price et al. 2024</a>). 
     <b>Note UNCOVER MSA spec-zs are not included in these catalogs,
     and the lensing magnifications in this catalog are based only 
     on phot-zs or previous literature spec-zs.</b> 
@@ -284,7 +351,6 @@ URL = "/DR4.html"
     and <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..270....7W/abstract">Weaver et al. 2024</a> 
     when using any of the following data products.
 </p>
-<!-- <table> -->
 <table style="margin-bottom:0; width:100%;">
     <tr class='mainhead'>
         <th colspan="2">Photometric catalogs (including EAZY redshifts & restframe fluxes):</th>
@@ -326,8 +392,6 @@ URL = "/DR4.html"
             magnifications).
         </td>
         <td style="width:30%">        
-            <!-- <a href="URL">Catalog</a> &nbsp; &nbsp; 
-            <a href="URL">README</a> -->
             <span style="color: rgba(229, 160, 90, 1);">Catalog [coming soon!]</span> &nbsp; &nbsp; 
             <span style="color: rgba(229, 160, 90, 1);">README [coming soon!]</span>
         </td>
@@ -379,14 +443,16 @@ URL = "/DR4.html"
             <a href="URL">zphot.translate</a>
         </td>
     </tr>
-</table>
+</table> -->
 
 
 
 
-<hr>
+<!-- <hr> -->
+
 <!-- Mosaic release -->
-<h3 class="minor" id="Mosaics">NIRCam primary / NIRISS parallel mosaic release</h3>
+
+<!-- <h3 class="minor" id="Mosaics">NIRCam primary / NIRISS parallel mosaic release</h3>
 <h4 class="minor date">April 22, 2024</h4>
 
 
@@ -865,4 +931,4 @@ These mosaics include data from the following programs:
         </td>
     </tr>
 </table>
-
+ -->
