@@ -112,6 +112,6 @@ headless = true
         2024, arXiv:2407.17110
     
 
-<!-- 1. [The UNCOVER Survey: Initial Release of Ultradeep JWST/NIRSpec PRISM spectra for ~700 galaxies from z~0.3-13 in Abell 2744](URL_P24)
+1. [The UNCOVER Survey: Initial Release of Ultradeep JWST/NIRSpec PRISM spectra for ~700 galaxies from z~0.3-13 in Abell 2744](https://arxiv.org/abs/2408.03920)
     - Price, S. H., Bezanson, R., Labbe, I., et al., 
-        2024, arXiv: -->
+        2024, arXiv:2408.03920
