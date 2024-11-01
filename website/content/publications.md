@@ -107,7 +107,7 @@ headless = true
         2024, ApJL 967 L23
     
 
-1. [The Extreme Low-mass End of the Mass-Metallicity Relation at z∼7](https://ui.adsabs.harvard.edu/abs/2024arXiv240717110C/abstract)
+1. [The Extreme Low-mass End of the Mass-Metallicity Relation at z~7](https://ui.adsabs.harvard.edu/abs/2024arXiv240717110C/abstract)
     -  Chemerynska, I., Atek, H., Dayal, P., et al., 
         2024, arXiv:2407.17110
     
