@@ -15,7 +15,7 @@ DR4
 <!-- Spectra release -->
 <h4 class="minor bigger">
     <a href="../DR4.html#Spectra">First UNCOVER Spectra and Redshift catalog release</a>;<br>
-    <div class="smaller">(<a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240803920P/abstract">Price et al. 2024</a>, August 7, 2024)</div>
+    <div class="smaller">(<a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240803920P/abstract">Price et al. 2024</a>, August 7, 2024; <i>DR4.1:</i> December 5, 2024)</div>
 </h4>
 
 

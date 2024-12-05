@@ -18,5 +18,3 @@ These data will allow us to understand where stars form within galaxies, the inc
            
 [MegaScience official program info](https://www.stsci.edu/jwst/science-execution/program-information.html?id=4111)
 
-<!-- ### Deep NIRCam / XX filters 1-5 microns to ~XXXAB -->
-
