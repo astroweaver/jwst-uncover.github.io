@@ -9,7 +9,7 @@ imagecredit = "<a href='https://ui.adsabs.harvard.edu/abs/2024arXiv240803920P/ab
 The first UNCOVER spectroscopic release is now available, as presented in 
 [Price et al. 2024](https://ui.adsabs.harvard.edu/abs/2024arXiv240803920P/abstract)!
 
-This release includes spectra of 553 objects from z~0.3 to z~13 
+This release includes spectra of 553 objects from z\~0.3 to z\~13 
 taken in July/Aug 2023 and a spectroscopic redshift catalog. 
 (Initial observations of Mask 1 were impacted by a detector short.)
 

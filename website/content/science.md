@@ -16,9 +16,9 @@ The integrated star formation history is barely constrained at z≳8, and very f
 
 ### Reionization
 
-Current studies disagree about the faint end slope of the z~6 UV luminosity function. The deep and high spatial resolution observations from UNCOVER will resolve this question through detailed constraints on the faint end slope. Additionally, UNCOVER spectra of faint Lyman Break Galaxies will constrain the ionizing photon production rate and the escape fraction at the epoch of reionization.
+Current studies disagree about the faint end slope of the z\~6 UV luminosity function. The deep and high spatial resolution observations from UNCOVER will resolve this question through detailed constraints on the faint end slope. Additionally, UNCOVER spectra of faint Lyman Break Galaxies will constrain the ionizing photon production rate and the escape fraction at the epoch of reionization.
 
-### Mass complete studies out to z~10
+### Mass complete studies out to z\~10
 
 A key test for galaxy formation models is the evolution of the stellar mass function, but probing the faint end slope at high redshift requires ultra-deep data. With UNCOVER, we will be able to probe the full stellar mass function out to z=10, which will place constraints on the stellar mass-halo mass relation and thus the overall efficiency of galaxy formation.
 
@@ -31,4 +31,4 @@ At low redshift, satellite quenching leads to an upturn in the quiescent galaxy 
 
 ### Dusty galaxies at z>4
 
-Though dusty star-formation dominates the SFR density below z~2, dust is not expected to play a large role at earlier times. However, dusty star formation is not well constrained at z>3. UNCOVER will detect any obscured galaxy with mass >10<sup>9</sup> M<sub>☉</sub> out to z=9, if they exist, and can spectroscopically confirm this population to 28 AB mag.
+Though dusty star-formation dominates the SFR density below z\~2, dust is not expected to play a large role at earlier times. However, dusty star formation is not well constrained at z>3. UNCOVER will detect any obscured galaxy with mass >10<sup>9</sup> M<sub>☉</sub> out to z=9, if they exist, and can spectroscopically confirm this population to 28 AB mag.
