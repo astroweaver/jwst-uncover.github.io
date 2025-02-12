@@ -36,6 +36,11 @@ DR4
     August 7, 2024)</div>
 </h4>
 
+<!-- SPS catalog release -->
+<h4 class="minor bigger">
+    <a href="DR4.html#SPSCatalogs">Updated MegaScience+UNCOVER stellar population catalogs</a>
+    <div class="smaller">(<a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..270...12W/abstract">Wang et al. 2024</a>, February 13, 2024)</div>
+</h4>
 
 
 <!-- 

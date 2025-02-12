@@ -16,8 +16,8 @@ URL = "/DR4.html"
     <ul class="subnav">
         <li><a href="#Spectra">Reduced spectra + catalogs</a></li>
         <li><a href="#LensingMaps">Lensing maps</a></li>
-        <li><a href="#UpdatedLensMag">Updated Lensing Magnifications</a></li>
-        <!-- <li><a href="#SPSCatalogs">Stellar population catalogs</a></li> -->
+        <li><a href="#UpdatedLensMag">Lensing Magnifications</a></li>
+        <li><a href="#SPSCatalogs">Stellar population catalogs</a></li>
         <!-- <li><a href="#PhotometricCatalogs">Photometric catalogs</a></li> -->
         <!-- <li><a href="#Mosaics">Mosaics</a></li> -->
     </ul>
@@ -28,8 +28,6 @@ URL = "/DR4.html"
 <hr>
 <!-- Spectra+Catalogs-->
 <h3 class="minor" id="Spectra">First reduced spectra + redshift catalog release</h3>
-
-
 
 
 <h4 class="minor date">December 5, 2024</h4>
@@ -332,6 +330,180 @@ URL = "/DR4.html"
         </td>
     </tr>
 </table> 
+
+
+
+<hr>
+<!-- Stellar populations catalogs release -->
+<h3 class="minor" id="SPSCatalogs">Updated stellar population catalogs release</h3>
+
+
+<h4 class="minor date">February 13, 2025</h4>
+
+
+
+<p style="margin-bottom: 1rem">
+    The updated DR4 stellar population synthesis (SPS) catalog is based on the 
+    "SUPER" DR3 photometric catalog, with optimally determined aperture sizes 
+    per object. 
+    The methodologies follow 
+    <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..270...12W/abstract">Wang et al. 2024</a>: 
+    Modeling is performed with the Prospector inference framework 
+    (<a href="https://ui.adsabs.harvard.edu/abs/2021ApJS..254...22J/abstract">Johnson et al. 2021</a>). 
+    The modeling assumes a non-parametric, logarithmically-spaced SFH, as well 
+    as a mass function prior, a Gaussian mass-metallicity prior, and a dynamic 
+    SFH(M, z) prior from Prospector-β to optimize the photometric inference 
+    over the wide parameter space covered by deep JWST surveys 
+    (<a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...944L..58W/abstract">Wang et al. 2023</a>). 
+    A second catalog with fixed redshifts to spec-zs 
+    (including the UNCOVER MSA spec-zs) is also available.
+</p>
+<!-- <p style="margin-bottom: 1rem"> -->
+<p style="margin-bottom: 0.2rem">
+    In summary, this date release incorporates the following updates:
+</p>
+<ul>
+    <li>SED fitting is performed on the complete set of photometric data, which 
+    includes broad-band data obtained from UNCOVER and medium-band data 
+    obtained from MegaScience.</li>
+    <li>Lens model v2.0 is used.</li>
+    <li>An additional catalog, where the SEDs are fit with redshifts fixed to 
+    the spectroscopic redshifts released in DR4 
+    (<a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240803920P/abstract">Price et al. 2024</a>) 
+    is included.</li>
+</ul>
+<p style="margin-bottom: 1rem">
+    <b>Note that the IDs in the full-sample catalog are identical to the DR3 IDs.</b> 
+    <br>The primary IDs in the spec-z catalog are the MSA IDs (please see the 
+    <a href="https://drive.google.com/file/d/1kkCsTJJ8tu2_IFW3a7gTHwpqXt_RJH6G/view?usp=drive_link">README</a>). 
+</p>
+<p style="margin-bottom: 1rem">
+    For full details, please see the 
+    <a href="https://drive.google.com/file/d/1kkCsTJJ8tu2_IFW3a7gTHwpqXt_RJH6G/view?usp=drive_link">README</a> 
+    and the <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..270...12W/abstract">catalog paper</a>.
+</p>
+<p style="margin-bottom: 1.5rem">
+    Please cite <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..270...12W/abstract">Wang et al. 2024</a>, 
+    <!-- (SPS modeling methodology),  -->
+    <a href="https://ui.adsabs.harvard.edu/abs/2024ApJS..270....7W/abstract">Weaver et al. 2024</a>, 
+    <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240413132S/abstract">Suess et al. 2024</a>, 
+    <!-- (UNCOVER & MegaScience photometry) -->
+    and <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.4568F/abstract">Furtak et al. 2023</a> 
+    <!-- (lens modeling methodology) -->
+    when using any of the following data products, 
+    and also 
+    <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240803920P/abstract">Price et al. 2024</a> 
+    <!-- (spec-z release) -->
+    when using the catalogs adopting spec-zs. 
+</p>
+<!-- <table> -->
+<table style="margin-bottom:0; ">
+    <tr class="mainhead">
+        <th style="width:22%">Product</th>
+        <th style="width:50%">Description</th>
+        <th style="width:20%">Files</th>        
+    </tr>
+    <tr class="double-row-border">
+        <td>SPS catalog</td>
+        <td>Stellar population catalog based on the DR3 SUPER photometric catalog 
+            with optimally determined aperture sizes per object, 
+            with the redshift inferred <u>simultaneously</u> from the photometric fit</td>
+        <td>         
+            <a href="https://drive.google.com/file/d/1AE1g_5m9PYnu2LtDEAgXOgxkguImy7jv/view?usp=drive_link">FITS</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1kkCsTJJ8tu2_IFW3a7gTHwpqXt_RJH6G/view?usp=drive_link">README</a>
+        </td>
+    </tr> 
+    <tr>
+        <td>Quicklook notebook</td>
+        <td>Jupyter notebook for plotting the maximum-likelihood SEDs, SFH percentiles, and posteriors</td>
+        <td>        
+            <a href="https://drive.google.com/file/d/1BatnxQfFvffe1sVtwmY7VOi4xkRIlPrz/view?usp=drive_link">Notebook</a> 
+        </td>
+    </tr>
+    <tr>
+        <td>Chains</td>
+        <td>Posteriors (subset of 500) for the default SPS catalog</td>
+        <td>        
+            <a href="https://drive.google.com/file/d/1j0-QfKx26ZLZT0eeCGpRyCRcUWgBXMv_/view?usp=drive_link">npz</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1kkCsTJJ8tu2_IFW3a7gTHwpqXt_RJH6G/view?usp=drive_link">README</a> 
+        </td>
+    </tr>
+    <tr>
+        <td>SEDs</td>
+        <td>Best-fit models for the default SPS catalog, for visualization purposes</td>
+        <td>        
+            <a href="https://drive.google.com/file/d/1JL0e3VM4NZRcJrcQ4aoyOR1AORO_-ng6/view?usp=drive_link">npz</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1kkCsTJJ8tu2_IFW3a7gTHwpqXt_RJH6G/view?usp=drive_link">README</a> 
+        </td>
+    </tr>
+    <tr>
+        <td>SFHs</td>
+        <td>SFH percentiles for the default SPS catalog (in lookback time, Gyr)</td>
+        <td>        
+            <a href="https://drive.google.com/file/d/18gK5JFK0A-WCJ7T3r0h1amXPRCrfmorw/view?usp=drive_link">npz</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1kkCsTJJ8tu2_IFW3a7gTHwpqXt_RJH6G/view?usp=drive_link">README</a> 
+        </td>
+    </tr>
+    <tr>
+        <td>Chains, log SFR ratios</td>
+        <td>SFH posteriors, quantified as temporal array of logSFR ratios (subset of 500)</td>
+        <td>        
+            <a href="https://drive.google.com/file/d/1f7aR8Wptqgjzvd-6bUPERGyDBllE6jTI/view?usp=drive_link">npz</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1kkCsTJJ8tu2_IFW3a7gTHwpqXt_RJH6G/view?usp=drive_link">README</a> 
+        </td>
+    </tr>
+</table>
+<table>
+    <tr class="mainhead">
+        <th style="width:22%">Product</th>
+        <th style="width:50%">Description</th>
+        <th style="width:20%">Files</th>          
+    </tr>
+    <tr class="double-row-border">
+        <td>SPS catalog, spec-zs</td>
+        <td>Stellar population catalog based on the DR3 SUPER photometric catalog 
+            with optimally determined aperture sizes per object, redshifts fixed to 
+            DR4 UNCOVER/MSA spec-zs</td>
+        <td>         
+            <a href="https://drive.google.com/file/d/1j32n3e7hX0iw5ZyGlVAbyIf4MmjM4RfS/view?usp=drive_link">FITS</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1kkCsTJJ8tu2_IFW3a7gTHwpqXt_RJH6G/view?usp=drive_link">README</a>
+        </td>
+    </tr> 
+    <tr>
+        <td>Chains, zspec</td>
+        <td>Posteriors (subset of 500) for the SPS catalog with fixed spec-z</td>
+        <td>        
+            <a href="https://drive.google.com/file/d/1amAhNd_LRbb8H0a-aMMvOpGJ4Fktemds/view?usp=drive_link">npz</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1kkCsTJJ8tu2_IFW3a7gTHwpqXt_RJH6G/view?usp=drive_link">README</a> 
+        </td>
+    </tr>
+    <tr>
+        <td>SEDs, zspec</td>
+        <td>Best-fit models for the SPS catalog with fixed zspec, for visualization purposes</td>
+        <td>        
+            <a href="https://drive.google.com/file/d/1Aki1UYdVFbLGqPJMRVTxHG65yY8CQdzp/view?usp=drive_link">npz</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1kkCsTJJ8tu2_IFW3a7gTHwpqXt_RJH6G/view?usp=drive_link">README</a> 
+        </td>
+    </tr>
+    <tr>
+        <td>SFHs, zspec</td>
+        <td>SFH percentiles for the SPS catalog with fixed zspec (in lookback time, Gyr)</td>
+        <td>        
+            <a href="https://drive.google.com/file/d/1o2nlVZClkAicJGNgJnA7aL5atLs_45sb/view?usp=drive_link">npz</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1kkCsTJJ8tu2_IFW3a7gTHwpqXt_RJH6G/view?usp=drive_link">README</a> 
+        </td>
+    </tr>
+    <tr>
+        <td>Chains, log SFR ratios, zspec</td>
+        <td>SFH posteriors, quantified as temporal array of logSFR ratios (subset of 500), with fixed spec-z</td>
+        <td>        
+            <a href="https://drive.google.com/file/d/1amAhNd_LRbb8H0a-aMMvOpGJ4Fktemds/view?usp=drive_link">npz</a> &nbsp; &nbsp; 
+            <a href="https://drive.google.com/file/d/1kkCsTJJ8tu2_IFW3a7gTHwpqXt_RJH6G/view?usp=drive_link">README</a> 
+        </td>
+    </tr>
+</table>
+
+
 
 
 <!-- <hr> -->
